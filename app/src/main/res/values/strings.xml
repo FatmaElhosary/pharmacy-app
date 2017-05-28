@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">send</string>
+    <string name="hint_msg">Enter Your Message</string>
+    <string name="button_txt">send</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="save">Save</string>
+</resources>
