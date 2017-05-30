@@ -1,21 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <EditText
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_msg"
-        android:id="@+id/message_txt"
+        android:hint="أكتب الاسم"
+        android:id="@+id/name"
+        android:inputType="text"
         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="عنوان التوصيل بالتفصيل"
+        android:id="@+id/address"
+        android:layout_below="@+id/name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="رقم التلفون"
+        android:id="@+id/tele"
+        android:inputType="phone"
+        android:layout_below="@+id/address"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="العلاج المطلوب"
+        android:id="@+id/drugs"
+        android:layout_below="@+id/tele"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="الكمية"
+        android:id="@+id/amount"
+        android:inputType="number"
+        android:layout_below="@+id/drugs"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="ملاحظات"
+        android:id="@+id/comment"
+        android:layout_below="@+id/amount"
+        />
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_txt"
+        android:layout_below="@+id/comment"
         android:onClick="sendMessage"/>
 
 
-</LinearLayout>
+</RelativeLayout>
 

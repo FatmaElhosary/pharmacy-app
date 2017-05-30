@@ -16,7 +16,7 @@ public class send extends AppCompatActivity {
         setContentView(R.layout.activity_send_layout);
     }
     public void sendMessage(View view){
-        message_text=(EditText)findViewById(R.id.message_txt);
+        message_text=(EditText)findViewById(R.id.name);
         String msg=message_text.getText().toString();
         Intent intent=new Intent(this,SecondActivity.class);
         intent.putExtra(msg_key,msg);
